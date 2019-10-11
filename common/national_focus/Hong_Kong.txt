@@ -1,0 +1,1353 @@
+focus_tree = {
+	id = Hong_Kong
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HKG
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = Finish_the_Shing_Mun_Reservoir_Project
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.00
+		x = 5
+		y = 0
+			completion_reward = {
+					790 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	} 
+
+	focus = {
+		id = Canton_Railroad_extension
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.00
+		x = 5
+		y = 1
+		 prerequisite = {
+        focus = Finish_the_Shing_Mun_Reservoir_Project
+        }
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Start_Hiram_s_Highway_Project
+		icon = GFX_SAIKUNG
+		cost = 10.00
+		x = 3
+		y = 2
+		 prerequisite = {
+        focus = Canton_Railroad_extension
+        }
+			completion_reward = {
+					788 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Fortify_Shumchun
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		x = 3
+		y = 3
+		prerequisite = {
+        focus = Start_Hiram_s_Highway_Project
+        }
+        available = {
+			HKG = { controls_state = 791 }
+			}
+			completion_reward = {
+					791 = {
+									add_building_construction = { type = bunker province = 7108 level = 3 instant_build = yes }
+								}
+						}
+				}
+
+ 	focus = {
+		id = Shumchun_industrial_zone
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		x = 3
+		y = 4
+		 prerequisite = {
+        focus = Fortify_Shumchun
+        }
+			completion_reward = {
+					791 = {
+					add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					791 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Kowloon_industrial_zone
+		icon = GFX_focus_generic_industry_1
+		cost = 7.00
+		x = 7
+		y = 2
+		 prerequisite = {
+        focus = Canton_Railroad_extension
+        }
+			completion_reward = {
+					788 = {
+					add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Ma_On_Shan_Iron_Ore
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		x = 7
+		y = 3
+		 prerequisite = {
+        focus = Kowloon_industrial_zone
+        }
+			completion_reward = {
+					790 = {
+					add_resource = {
+    				type = steel
+    				amount = 4
+					}
+
+						}
+				}
+
+	}
+
+	focus = {
+		id = Get_Tungsten_from_Needle_Hill 
+		icon = GFX_focus_generic_tungsten
+		cost = 10.00
+		x = 7
+		y = 4
+		 prerequisite = {
+        focus = Ma_On_Shan_Iron_Ore
+        }
+			completion_reward = {
+					790 = {
+					add_resource = {
+    				type = tungsten
+    				amount = 2
+					}
+					790 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+
+						}
+				}
+
+	}
+
+	focus = {
+		id = Mobil_Meifoo_silo
+		icon = GFX_Focus_Mobil
+		cost = 10.00
+		x = 9
+		y = 3
+		 prerequisite = {
+        focus = Kowloon_industrial_zone
+        }
+			completion_reward = {
+					790 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = fuel_silo
+									level = 2
+									instant_build = yes
+								}
+						}
+
+						}
+				}
+
+	focus = {
+		id = Queen_Mary_Hospital
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 5
+		y = 2
+		 prerequisite = {
+        focus = Canton_Railroad_extension
+        }
+			completion_reward = {
+					add_ideas = Better_medical_system
+				}
+
+	}
+
+	focus = {
+		id = Fund_HKU
+		icon = GFX_Focus_HKU
+		cost = 10.00
+		x = 5
+		y = 3
+		 prerequisite = {
+        focus = Queen_Mary_Hospital
+        }
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+
+	focus = {
+		id = New_asia_college
+		icon = GFX_New_Asia
+		cost = 10.00
+		x = 5
+		y = 4
+		 prerequisite = {
+        focus = Fund_HKU
+        }
+        available = {
+        	OR = {
+        	date > 1943.1.1
+			CHI = { surrender_progress > 0.3 }
+				}
+				}
+
+
+			completion_reward = {
+					add_research_slot = 1
+				}
+				}
+
+
+	
+
+		focus = {
+		id = War_preperation
+		icon = GFX_goal_generic_demand_territory
+		cost = 7.00
+		x = 23
+		y = 0
+			completion_reward = {
+					add_war_support = 0.05
+					add_political_power = 150
+
+				}
+
+	}
+
+	focus = {
+		id = HK_Defence_Scheme_1936
+		icon = GFX_focus_chi_army_reform
+		cost = 7.00
+		prerequisite = { focus = War_preperation }
+		x = 28
+		y = 2
+			completion_reward = {
+					army_experience = 20
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Main_Island_Defense_Strategy
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = { focus = HK_Defence_Scheme_1936 }
+		mutually_exclusive = { focus = Comprehensive_Defense_Strategy }
+		x = 27
+		y = 3
+			completion_reward = {
+				army_experience = 20
+				add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = cat_mobile_warfare
+				category = cat_superior_firepower
+			}
+				789 = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				}
+				}
+				}
+				
+
+	focus = {
+		id = Motorized_Garrison
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		 available = {
+        has_tech = motorised_infantry
+    }
+
+		prerequisite = { focus = Main_Island_Defense_Strategy }
+		x = 27
+		y = 4
+			completion_reward = {
+				add_equipment_to_stockpile = { type = motorized_equipment amount = 150 producer = ENG }
+	}
+	}
+
+		focus = {
+		id = Fortify_HK_Island
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		available = {
+			HKG = { controls_state = 789 }
+		}
+		prerequisite = { focus = Motorized_Garrison }
+		x = 27
+		y = 5
+			completion_reward = {
+				789 = {
+				add_building_construction = { type = coastal_bunker province = 13218 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 13220 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 13221 level = 4 instant_build = yes }
+								}
+	}
+	}
+
+	focus = {
+		id = Comprehensive_Defense_Strategy
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = { focus = HK_Defence_Scheme_1936 }
+		mutually_exclusive = { focus = Main_Island_Defense_Strategy }
+		x = 29
+		y = 3
+			completion_reward = {
+			add_tech_bonus = {
+			bonus = 1.5
+			uses = 2
+			category = cat_grand_battle_plan
+			category = cat_mass_assault
+			}
+			army_experience = 20
+			789 = {
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				}
+				}
+				}
+
+	focus = {
+		id = Gin_Drinkers_Line
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = { focus = Comprehensive_Defense_Strategy }
+		available = {
+			has_completed_focus = Finish_the_Shing_Mun_Reservoir_Project
+			HKG = { controls_state = 788 }
+			HKG = { controls_state = 790 }
+			}
+		x = 29
+		y = 4
+			completion_reward = {
+				788 = {
+				add_building_construction = { type = bunker province = 13222 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13223 level = 3 instant_build = yes }
+								}
+				790 = {
+				add_building_construction = { type = bunker province = 13225 level = 5 instant_build = yes }
+								}
+	}
+	}
+						
+				
+	focus = {
+		id = Strengthen_Devil_s_Peak_Line
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = { focus = Gin_Drinkers_Line }
+		available = {
+			HKG = { controls_state = 788 }
+			}
+		x = 29
+		y = 5
+			completion_reward = {
+					788 = {
+				add_building_construction = { type = bunker province = 13222 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13223 level = 3 instant_build = yes }
+								}
+				}
+
+	}
+	focus = {
+		id = New_Naval_Plan
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 7
+		prerequisite = {
+			focus = War_preperation
+		}
+		x = 18
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+				name = HKG_fund_the_navy
+				uses = 1
+				bonus = 1.0
+				category = naval_doctrine
+			}
+					navy_experience = 20
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = naval_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	
+	focus = {
+		id = Aberdeen_Dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7
+		x = 20
+		y = 3
+		prerequisite = { focus = Kowloon_industrial_zone }
+		prerequisite = { focus = New_Naval_Plan }
+
+			completion_reward = {
+					789 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = Taikoo_Dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7
+		x = 16
+		y = 3
+		prerequisite = { focus = Kowloon_industrial_zone }
+		prerequisite = { focus = New_Naval_Plan }
+		
+			completion_reward = {
+					789 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+        }
+
+	focus = {
+		id = Whampoa_Dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 18
+		y = 3
+		cost = 7
+		prerequisite = { focus = Kowloon_industrial_zone }
+		prerequisite = { focus = New_Naval_Plan }
+		
+			completion_reward = {
+					788 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	} 
+	focus = {
+		id = Our_Own_Minesweeper
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 18
+		y = 5
+		cost = 7
+		prerequisite = { focus = Empire_Ships }
+			completion_reward = {
+					add_tech_bonus = {
+				name = HKG_Minesweeper
+				bonus = 1.0
+				uses = 2
+				category = naval_minesweeping
+			}
+				}
+
+	} 
+	focus = {
+		id = Runway_13_31
+		icon = GFX_goal_generic_air_production
+		x = 23
+		y = 2
+		cost = 8.00
+		prerequisite = { focus = War_preperation }
+		available = {
+			HKG = { controls_state = 788 }
+			}
+			completion_reward = {
+					788 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	} 
+
+			
+	focus = {
+		id = Continue_the_construction_of_Shek_Kong_Airfield
+		icon = GFX_goal_generic_air_production
+		x = 23
+		y = 3
+		cost = 8.00
+		prerequisite = { focus = Runway_13_31 }
+		available = {
+			HKG = { controls_state = 790 }
+			}
+			completion_reward = {
+					air_experience = 10
+					790 = {
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	} 
+	focus = {
+		id = HK_Fighter_Squad
+		icon = GFX_goal_generic_air_production
+		x = 24
+		y = 4
+		cost = 10.00
+		prerequisite = { focus = Continue_the_construction_of_Shek_Kong_Airfield }
+		prerequisite = { focus = HK_Defence_Scheme_1936 }
+		available = {
+			HKG = { controls_state = 788 }
+			788 = {air_base > 4}
+			}
+			completion_reward = {
+					add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 }
+					air_experience = 10
+					
+				}
+
+	} 
+	focus = {
+		id = Anti_Air_in_Victoria
+		icon = GFX_goal_generic_air_production
+		x = 22
+		y = 4
+		cost = 10.00
+		prerequisite = { focus = Continue_the_construction_of_Shek_Kong_Airfield }
+		available = {
+			HKG = { controls_state = 789}
+			}
+			completion_reward = {
+					789 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 3
+									instant_build = yes
+								}
+						}
+					
+				}
+
+	} 
+	focus = {
+		id = Empire_Ships
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8.00
+		x = 18
+		y = 4
+		prerequisite = { focus = Taikoo_Dockyard }
+		prerequisite = { focus = Whampoa_Dockyard }
+		prerequisite = { focus = Aberdeen_Dockyard }
+		completion_reward = {
+			add_ideas = Empire_Ship
+		}
+		}
+
+	focus = {
+		id = Anti_Air_in_Kowloon
+		icon = GFX_goal_generic_air_production
+		x = 23
+		y = 5
+		cost = 8.00
+		prerequisite = { focus = Anti_Air_in_Victoria }
+		prerequisite = { focus = HK_Fighter_Squad }
+		available = {
+			HKG = { controls_state = 788 }
+			}
+			completion_reward = {
+					788 = {
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+		} 
+
+		focus = {
+		id = Governor_Northcote
+		icon = GFX_HKG_Northcote
+		x = 10
+		y = 7
+		cost = 1.00
+		available = {
+			has_country_leader = { ruling_only = yes name = "Geoffry Northcote" }
+			}
+		bypass = {
+			has_country_leader = { ruling_only = yes name = "Geoffry Northcote" }
+			}
+		}
+
+		focus = {
+		id = Declare_HK_as_a_free_trade_zone
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11
+		y = 9
+		cost = 10
+		prerequisite = { focus = Support_Chiang }
+		mutually_exclusive = { focus = Rearm_HK }
+			completion_reward = {
+			add_ideas = free_trade
+			add_timed_idea={ idea= Free_trade_zone days= 200}
+			random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+
+					
+		}
+		}
+		
+		focus = {
+		id = JAP_won_t_attack_HK
+		icon = GFX_goal_generic_attack_allies
+		x = 11
+		y = 10
+		cost = 10		
+		prerequisite = { focus = Declare_HK_as_a_free_trade_zone }
+			completion_reward = {
+						add_ideas = More_refugees
+						}
+		}
+
+		focus = {
+		id = Strengthen_the_Fareast_Outpost
+		icon = GFX_goal_generic_trade
+		x = 11
+		y = 11
+		cost = 10		
+		prerequisite = { focus = JAP_won_t_attack_HK }
+			completion_reward = {
+						789 = {
+									add_building_construction = { type = naval_base province = 13221 level = 2 instant_build = yes }
+								}
+						790 = {
+									add_building_construction = { type = bunker province = 13224 level = 2 instant_build = yes }
+									add_building_construction = { type = bunker province = 13226 level = 2 instant_build = yes }
+									add_building_construction = { type = bunker province = 13227 level = 2 instant_build = yes }
+								}
+						add_war_support = 0.05
+
+						}
+		}
+
+		focus = {
+		id = Secret_Plan_Hong_Kong_Island_First
+		icon = GFX_goal_generic_air_production
+		x = 11
+		y = 12
+		cost = 10		
+		prerequisite = { focus = Strengthen_the_Fareast_Outpost }
+			completion_reward = {
+						swap_ideas = {
+     		remove_idea = HK_Conscription_Policy
+    		   add_idea = HK_Conscription_Policy_2
+									}
+						790 = {
+						remove_building = {
+    					type = industrial_complex
+    					level = 2
+						}
+						}
+						789 = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+    					type = industrial_complex
+    					level = 3
+						}
+						}
+						}
+		}
+
+		focus = {
+		id = Northcote_College_of_Education
+		icon = GFX_Northcole_College
+		x = 11
+		y = 13
+		cost = 10		
+		prerequisite = { focus = Secret_Plan_Hong_Kong_Island_First }
+			completion_reward = {
+						add_research_slot = 1
+						}
+		}
+
+		
+
+		focus = {
+		id = Rearm_HK
+		icon = GFX_focus_secret_rearmament
+		x = 9
+		y = 9
+		cost = 10
+		prerequisite = { focus = Support_Chiang }
+		mutually_exclusive = { focus = Declare_HK_as_a_free_trade_zone }
+			completion_reward = {
+			swap_ideas = {
+    		 remove_idea = HK_Conscription_Policy
+    		  add_idea = HK_Conscription_Policy_2
+		}
+			random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+						}
+			
+		}
+		}
+		}   
+
+		focus = {
+		id = Ask_UK_for_support
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 9
+		y = 10
+		cost = 10
+		available = {
+        	is_subject_of = ENG
+				}
+		prerequisite = { focus = Rearm_HK }
+			completion_reward = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 400 }
+
+		}
+		}
+
+		focus = {
+		id = Ask_the_commonwealth_for_support
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 9
+		y = 11
+		cost = 10
+		available = {
+        	is_subject_of = ENG
+				}
+		prerequisite = { focus = Ask_UK_for_support }
+			completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 200 }
+
+		}
+		}
+
+		focus = {
+		id = Defense_Research
+		icon = GFX_focus_research
+		x = 9
+		y = 12
+		cost = 10
+		prerequisite = { focus = Ask_the_commonwealth_for_support }
+			completion_reward = {
+			add_research_slot = 1
+
+		}
+		}
+
+		focus = {
+		id = Chinese_Regiment
+		icon = GFX_goal_rhineland
+		x = 9
+		y = 13
+		cost = 10
+		prerequisite = { focus = Defense_Research }
+			completion_reward = {
+			swap_ideas = {
+     		remove_idea = HK_Conscription_Policy_2
+    		 add_idea = HK_Conscription_Policy_3
+		}
+
+		}
+		}
+
+		focus = {
+		id = Support_Chiang
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		x = 10
+		y = 8
+		cost = 10
+				available = {
+			CHI = { controls_state = 605 }
+			CHI = { has_war = yes }
+			has_equipment = {
+    		infantry_equipment > 1000
+							}
+			}
+		prerequisite = { focus = Governor_Northcote }
+			completion_reward = {
+					country_event = HKG.2
+					add_political_power = -50
+					send_equipment = {
+   				 equipment = infantry_equipment
+   				amount = 1000
+    			target = CHI
+				}		
+					CHI = {
+							add_offsite_building = { type = arms_factory level = 2 }
+					
+								
+						
+		}
+		}
+		}
+
+		focus = {
+		id = Governor_Young
+		icon = GFX_HKG_Young
+		x = 15
+		y = 7
+		cost = 1.00
+		available = {
+			has_country_leader = { ruling_only = yes name = "Mark Young" }
+			}
+		bypass = {
+			has_country_leader = { ruling_only = yes name = "Mark Young" }
+			}
+		}
+
+		focus = {
+		id = Canadian_Force
+		icon = GFX_focus_attack_canada
+		x = 15
+		y = 8
+		cost = 7
+		prerequisite = { focus = Governor_Young }
+			completion_reward = {
+							division_template = {
+								name = "Canada HK Volunteer Defense Force"
+								priority = 2
+								division_names_group = HKG_INF_02
+								regiments = {
+									infantry = { x = 0 y = 0 }
+									infantry = { x = 0 y = 1 }
+								}
+								support = {
+									artillery = { x = 0 y = 0 }
+									recon = { x = 0 y = 1 }
+								}
+								}
+					
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 46 }
+					create_unit = {
+						division = "name = \"Canada HK Volunteer Defense Force\" division_template = \"Canada HK Volunteer Defense Force\" start_experience_factor = 0.4" 
+						owner = HKG
+					}
+					create_unit = {
+						division = "name = \"Canada HK Volunteer Defense Force\" division_template = \"Canada HK Volunteer Defense Force\" start_experience_factor = 0.4" 
+						owner = HKG
+					}
+				}
+		
+	}
+	}
+
+	focus = {
+		id = Defense
+		icon = GFX_goal_generic_defence
+		x = 15
+		y = 9
+		cost = 7
+		prerequisite = { focus = Canadian_Force }
+			completion_reward = {
+			add_ideas = Fight_for_HK
+		}
+		}
+
+	focus = {
+		id = Push_the_Japanese_away
+		icon = GFX_focus_attack_japan
+		x = 15
+		y = 10
+		cost = 2
+		available = { has_defensive_war = yes }
+		prerequisite = { focus = Defense }
+			completion_reward = {
+			add_timed_idea = { idea = Push days = 180 }
+		}
+		}
+
+		focus = {
+		id = Truce
+		icon = GFX_goal_generic_major_alliance
+		x = 15
+		y = 11
+		cost = 7
+		available = { has_defensive_war = yes }
+		available = { has_full_control_of_state = 326 }
+		available = { has_full_control_of_state = 788 }
+		available = { has_full_control_of_state = 789 }
+		available = { has_full_control_of_state = 790 }
+		prerequisite = { focus = Push_the_Japanese_away }
+			completion_reward = {
+			white_peace = JAP
+			give_military_access = JAP
+			add_political_power = 50
+
+		}
+		}
+
+
+		focus = {
+		id = Government_reform
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 7
+		cost = 10.00
+		
+			completion_reward = {
+					swap_ideas = {
+     				remove_idea = HKG_corruption
+    		   		add_idea = HKG_corruption_1
+									}
+					add_political_power = 150
+					add_autonomy_ratio = {
+					value = 0.1
+					}
+				}
+				}
+
+
+
+		focus = {
+		id = Young_Plan
+		icon = GFX_HKG_Young
+		x = 19
+		y = 8
+		cost = 7
+		mutually_exclusive = { focus = Own_Road_to_Democrats }
+		mutually_exclusive = { focus = Coop_with_Jap }
+		prerequisite = { focus = Governor_Young }
+		prerequisite = { focus = Government_reform }
+			completion_reward = {
+			add_ideas = Young_Plan
+			add_political_power = 50
+			
+		}
+		}
+
+
+		focus = {
+		id = City_Council
+		icon = GFX_goal_generic_national_unity
+		x = 19
+		y = 9
+		cost = 14.3
+		prerequisite = { focus = Young_Plan }
+			completion_reward = {
+			add_political_power = 100
+			add_ideas = City_council
+
+		}
+		}
+
+		focus = {
+		id = Towards_the_independence
+		icon = GFX_focus_chi_british_cooperation
+		x = 19
+		y = 10
+		cost = 7
+		available ={
+		compare_autonomy_progress_ratio > 0.55
+		}
+		prerequisite = { focus = City_Council }
+			completion_reward = {
+			swap_ideas = {
+     		remove_idea = Young_Plan
+    		   add_idea = Young_Plan_1
+									}
+		}
+		}
+
+		focus = {
+		id = Chongking_Conference
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 19
+		y = 11
+		cost = 7
+		prerequisite = { focus = Towards_the_independence }
+			completion_reward = {
+			country_event = HKG.5
+			add_opinion_modifier = { target = CHI modifier = large_increase }
+		}
+		}
+
+		focus = {
+		id = Self_Government_of_Hong_Kong
+		icon = GFX_focus_chi_british_cooperation
+		x = 19
+		y = 12
+		cost = 7
+		available ={
+		compare_autonomy_progress_ratio > 0.9
+		}
+		prerequisite = { focus = Chongking_Conference }
+			completion_reward = {
+			ENG = {
+			set_autonomy = {
+			target = HKG
+			autonomy_state = autonomy_dominion
+							}
+			}
+
+		}
+		}
+
+		focus = {
+		id = Declare_the_independence_of_HK
+		icon = GFX_HKG_independence
+		x = 19
+		y = 13
+		cost = 15
+		available = {
+			HKG = { compare_autonomy_state > autonomy_dominion }
+			}
+		prerequisite = { focus = Self_Government_of_Hong_Kong }
+			completion_reward = {
+			add_political_power = 150
+			add_timed_idea={ idea= HK_independence days= 720}
+
+		}
+		}
+
+		focus = {
+		id = First_General_Election
+		icon = GFX_goal_generic_national_unity
+		x = 20.5
+		y = 14
+		cost = 7
+		prerequisite = { focus = Declare_the_independence_of_HK focus = Canton_Conference }
+			completion_reward = {
+			
+
+		}
+		}
+
+		focus = {
+		id = Join_USA_Faction
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 14
+		cost = 7
+		prerequisite = { focus = Canton_Conference }
+			completion_reward = {
+			USA = {leave_faction = yes}
+			USA = {create_faction = Anti_Imperialism_Campaign}
+			USA = { add_to_faction = HKG }
+
+		}
+		}
+
+		focus = {
+		id = Hongkongese_Army
+		icon = GFX_goal_generic_special_forces
+		x = 20.5
+		y = 15
+		cost = 7
+		prerequisite = { focus = First_General_Election }
+			completion_reward = {
+			if = {
+    		limit = {
+        	has_idea = HK_Conscription_Policy
+    				}
+        	remove_ideas = HK_Conscription_Policy
+    				}
+			if = {
+    		limit = {
+        	has_idea = HK_Conscription_Policy_2
+    				}
+        	remove_ideas = HK_Conscription_Policy_2
+    				}
+			if = {
+    		limit = {
+        	has_idea = HK_Conscription_Policy_3
+    				}
+        	remove_ideas = HK_Conscription_Policy_3
+    				}
+
+		}
+		}
+
+		focus = {
+		id = ICAC
+		icon = GFX_Focus_ICAC
+		x = 20.5
+		y = 16
+		cost = 7
+		prerequisite = { focus = Hongkongese_Army }
+			completion_reward = {
+			remove_ideas = HKG_corruption_1
+			add_ideas = ICAC
+		}
+		}
+
+
+
+
+		focus = {
+		id = Own_Road_to_Democrats
+		icon = GFX_RCHK
+		x = 22
+		y = 8
+		cost = 7
+		mutually_exclusive = { focus = Young_Plan }
+		mutually_exclusive = { focus = Coop_with_Jap }
+		prerequisite = { focus = Government_reform }
+			completion_reward = {
+			add_ideas = Own_Road_democrats
+
+		}
+		}
+
+
+
+		focus = {
+		id = City_State
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 9
+		cost = 7
+		prerequisite = { focus = Own_Road_to_Democrats }
+			completion_reward = {
+
+			790 = {
+				add_building_construction = { type = bunker province = 13224 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13226 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13227 level = 3 instant_build = yes }
+								}
+
+		}
+		}
+
+		focus = {
+		id = Be_friend_Yank
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 22
+		y = 10
+		cost = 7
+		prerequisite = { focus = City_State }
+			completion_reward = {
+			give_military_access = USA
+			add_opinion_modifier = { target = USA modifier = large_increase }
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1400 }
+			USA ={give_guarantee = HKG}
+		}
+		}
+
+		focus = {
+		id = Decolonization
+		icon = GFX_focus_eng_decolonization
+		x = 22
+		y = 11
+		cost = 7
+		prerequisite = { focus = Be_friend_Yank }
+
+			completion_reward = {
+			if = {
+    		limit = {
+        USA = { is_in_faction = yes }
+    }
+    else = {
+        USA ={leave_faction = yes}
+    }
+}
+			set_politics = {
+			ruling_party = democratic
+			election_frequency = 70
+			elections_allowed = yes
+							}
+			OVERLORD = {
+				set_autonomy = {
+					target = HKG
+					autonomy_state = autonomy_free
+				}
+			}			
+			ENG = { remove_from_faction = ROOT }
+			CHI={
+			declare_war_on = {
+    		target = HKG
+    		type = annex_everything
+			}
+			}
+			ENG={
+			declare_war_on = {
+    		target = HKG
+    		type = annex_everything
+			}
+
+			}
+		}
+		}
+
+		focus = {
+		id = Canton_Conference
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 22
+		y = 12
+		cost = 15
+		prerequisite = { focus = Decolonization }
+			completion_reward = {
+			white_peace = CHI
+			white_peace = ENG
+			USA ={
+			white_peace = CHI
+			white_peace = ENG
+			}
+		}
+		}
+
+		focus = {
+		id = Coop_with_Jap
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 25
+		y = 8
+		cost = 7
+		available = {always = no}
+		mutually_exclusive = { focus = Own_Road_to_Democrats }
+		mutually_exclusive = { focus = Young_Plan }
+		prerequisite = { focus = Government_reform }
+			completion_reward = {
+			add_opinion_modifier = { target = JAP modifier = large_increase }
+			add_timed_idea={ idea= HKG_JAP_Assistance days= 365}
+
+
+		}
+		}
+
+
+		focus = {
+		id = Leak_the_weapon_designs_of_UK
+		icon = GFX_goal_generic_national_unity
+		x = 25
+		y = 9
+		cost = 7
+		available = {always = no}
+		prerequisite = { focus = Coop_with_Jap }
+			completion_reward = {
+
+		}
+		}
+
+		focus = {
+		id = RIOT
+		icon = GFX_goal_generic_national_unity
+		x = 25
+		y = 10
+		cost = 7
+		prerequisite = { focus = Leak_the_weapon_designs_of_UK }
+			completion_reward = {
+			
+
+		}
+		}
+
+		focus = {
+		id = Greater_asia_co-prosperity_sphere
+		icon = GFX_goal_generic_national_unity
+		x = 25
+		y = 11
+		cost = 5
+		prerequisite = { focus = RIOT }
+			completion_reward = {
+			
+
+		}
+		}
+
+

@@ -1,0 +1,15 @@
+state={
+	id=802
+	name="STATE_802"
+	history=
+	{
+		owner = ENG
+		add_core_of = MLA
+            }
+	provinces={
+		4367 4424 7427 10313 
+	}
+	manpower=750000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

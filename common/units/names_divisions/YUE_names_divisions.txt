@@ -1,0 +1,23 @@
+﻿YUE_INF_01 = 
+{
+	name = "Yuen Long Gang"
+
+	for_countries = { YUE }				
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUE_INF_01 }
+
+	fallback_name = "Yuen Long Gang"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Yuen Long Gang" }
+		2 = { "Yuen Long Gang" }
+		3 = { "Yuen Long Gang" }
+	}
+}

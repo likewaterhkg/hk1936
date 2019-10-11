@@ -1,0 +1,35 @@
+﻿division_template = {
+	name = "Colonial Garrison"
+	division_names_group = STR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+	### Far East Command ###
+	###Malaya
+	division= {	
+		name = "Singapore Fortress"
+		location = 12299
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "Penang Fortress"
+		location = 1291
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+	}

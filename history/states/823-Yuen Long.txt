@@ -1,0 +1,20 @@
+state={
+	id=823
+	name="STATE_823"
+	manpower = 34000
+	state_category = pastoral
+	provinces={
+		13224 
+	}
+	history=
+	{
+		owner = HKG
+		add_core_of = HKG
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+            13224 3
+            }
+            }
+	buildings_max_level_factor=1.000
+}

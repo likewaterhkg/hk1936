@@ -1,0 +1,36 @@
+﻿capital = 823 #Yuen Long
+
+oob = "YUE_1936"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of France
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	trench_warfare = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 100
+}
+
+create_country_leader = {
+	name = "Junius Ho Kwan-yiu" 
+	desc = "POLITICS_JUNIUS_HO_DESC"
+	picture = "gfx/leaders/YUE/Junius_Ho.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}

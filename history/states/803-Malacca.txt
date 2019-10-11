@@ -1,0 +1,23 @@
+
+state={
+	id=803
+	name="STATE_803"
+	history={
+		add_core_of = STR
+		owner = STR
+		buildings = {
+			infrastructure = 2
+			13228 = {
+				naval_base = 2
+
+			}
+
+		}
+		}
+	provinces={
+		13228 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

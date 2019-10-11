@@ -1,0 +1,92 @@
+Battle_of_Hong_Kong = {
+
+	HK_defense = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			has_war_with = JAP
+			}
+
+		
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			add_timed_idea={ idea = hold_gin_drinker_line days= 200}
+			if = {
+				limit = {
+					has_war_support < 0.7
+				}
+				set_war_support = 0.7
+			}
+			}
+			}
+	Retreat_to_HK_island = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			has_war_with = JAP
+			any_owned_state = {
+    		is_controlled_by = JAP
+			}
+			}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			JAP = {
+			set_state_controller = 788
+			set_state_controller = 790
+			}
+			}
+			}
+
+	Seek_help_from_the_commonwealth = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			country_exists = ENG
+			country_exists = RAJ
+			has_war_with = JAP
+			}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			 add_equipment_to_stockpile = {
+    		type = infantry_equipment
+   			 amount = 6120
+			}
+			}
+			}
+
+	}
+			
+			

@@ -1,0 +1,220 @@
+ideas = {
+
+	# TECHNOLOGY	
+	naval_manufacturer = {
+		
+		designer = yes
+
+		swire = {
+						
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = {
+         has_completed_focus = Taikoo_Dockyard
+			}		
+				
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer } 
+
+		}
+		cheoy_lee_shipyards = {
+			picture = cheoy_lee_shipyards
+			
+			allowed = {
+				original_tag = HKG
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# destroyers
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		hk_whampoa_dock = {
+			picture = whampoa_dock
+
+			available = {
+         has_completed_focus = Whampoa_Dockyard
+			}		
+			
+			allowed = {
+				original_tag = HKG
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# destroyers
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+		}				
+  }				
+
+	aircraft_manufacturer = { 
+		
+		designer = yes
+
+		HKG_hawker_aircraft = {
+			picture = hawker_hk
+			
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = {
+			OR = {
+			   is_subject_of = ENG
+			   }
+			OR = {
+           has_government = democratic
+           is_subject = no
+          }
+        }				
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		HKG_mitsubishi = {
+			picture = mitsubishi_hk
+			
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = {
+        has_government = fascism
+			}				
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+}
+
+	materiel_manufacturer = {
+			
+		designer = yes
+
+		diaward = {
+			
+			allowed = {
+				original_TAG = HKG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }		
+		}  
+
+		HKG_nissan = {
+			picture = nissan_hk
+			
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = {
+        has_government = fascism
+			}				
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+	}		
+
+	tank_manufacturer = {
+
+		designer = yes
+
+		HKG_kwai_chung_army_arsenal = {
+			picture = generic_acquire_tanks
+			
+			allowed = {
+				original_TAG = HKG
+			}
+
+			available = {
+         has_completed_focus = Kowloon_industrial_zone
+			}			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+}
+
+	industrial_concern = {
+
+		jardines_hk = {
+						
+			allowed = {
+				original_tag = HKG
+			}
+						
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+
+			modifier = { production_factory_max_efficiency_factor = 0.05 
+			}		
+		}	
+		
+		hk_electric = {
+			
+			allowed = {
+				original_TAG = HKG
+			}
+	
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+		}		
+	}
+	
+}	

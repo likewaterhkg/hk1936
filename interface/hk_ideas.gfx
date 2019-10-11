@@ -1,0 +1,62 @@
+spriteTypes = {	
+
+	### HONGKONG IDEAS
+
+	
+	spriteType = {
+		name = "GFX_idea_jardines_hk"
+		texturefile = "gfx/interface/ideas/idea_jardines_hk.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_swire"
+		texturefile = "gfx/interface/ideas/idea_swire.dds"
+	}			
+	spriteType = {
+		name = "GFX_idea_diaward"
+		texturefile = "gfx/interface/ideas/idea_diaward.dds"
+	}			
+	spriteType = {
+		name = "GFX_idea_hk_electric"
+		texturefile = "gfx/interface/ideas/idea_hk_electric.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_cheoy_lee_shipyards"
+		texturefile = "gfx/interface/ideas/idea_cheoy_lee_shipyards.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_whampoa_dock"
+		texturefile = "gfx/interface/ideas/idea_whampoa_dock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hawker_hk"
+		texturefile = "gfx/interface/ideas/idea_hawker_hk.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_idea_mitsubishi_hk"
+		texturefile = "gfx/interface/ideas/idea_mitsubishi_hk.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_idea_nissan_hk"
+		texturefile = "gfx/interface/ideas/idea_nissan_hk.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_northcote_appeal"
+		texturefile = "gfx/interface/ideas/idea_northcote_appeal.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_successor_of_sun"
+		texturefile = "gfx/interface/ideas/idea_successor_of_sun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arthur_grasett"
+		texturefile = "gfx/interface/ideas/idea_arthur_grasett.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lindsay_ride"
+		texturefile = "gfx/interface/ideas/idea_lindsay_ride.dds"
+	}
+}

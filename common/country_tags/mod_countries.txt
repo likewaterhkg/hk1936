@@ -1,0 +1,7 @@
+HKG = "countries/Hong_Kong.txt"
+SAR = "countries/Sarawak.txt"
+STR = "countries/Straits_Settlements.txt"
+BRU = "countries/Brunei.txt"
+BOR = "countries/North_Borneo.txt"
+IND = "countries/Indochina.txt"
+YUE = "countries/Yuen_Long.txt"

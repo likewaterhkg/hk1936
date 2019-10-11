@@ -1,0 +1,1192 @@
+ideas = {
+
+	country = {
+		HKG_corruption = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.30
+			}
+		}
+
+		HKG_corruption_1 = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.15
+			}
+		}
+
+		ICAC = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+			}
+		}
+
+		Empire_Ship = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = liberty_ships_focus
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		HK_Conscription_Policy = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.7
+				war_support_factor = -0.20
+			}
+			}
+		HK_Conscription_Policy_2 = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.5
+				war_support_factor = -0.1
+			}
+			}
+
+			HK_Conscription_Policy_3 = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.2
+			}
+			}
+			
+		Free_trade_zone = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = free_trade
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_weekly = 0.01
+
+
+
+			}
+			}
+
+			More_refugees = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = conscription_crisis
+			
+			modifier = {
+				monthly_population = 0.2
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+
+
+			}
+			}
+
+			Better_medical_system = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.03
+				research_speed_factor = 0.03
+
+			}
+			}
+
+			Fight_for_HK = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+			}
+			targeted_modifier = {
+			tag = JAP
+			defense_bonus_against = 0.1
+			}
+			}
+
+			Push = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				army_attack_factor = 0.25
+			}
+			}
+
+			Young_Plan = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				autonomy_gain = 0.1
+				democratic_drift = 0.10
+				political_power_gain = 0.1
+			}
+	
+			}
+
+			Young_Plan_1 = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				autonomy_gain = 2
+				democratic_drift = 0.10
+				political_power_gain = 0.2
+
+			}
+	
+			}
+
+			City_council = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				autonomy_gain = 1
+				democratic_drift = 0.10
+			}
+
+
+		}
+
+		HK_independence = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.2
+				stability_factor = -0.15
+				war_support_factor = -0.10
+			}
+
+
+		}
+
+		Own_Road_democrats = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				autonomy_gain = 1
+				democratic_drift = 0.10
+				political_power_gain = 0.1
+			}
+	
+			}
+
+			HKG_JAP_Assistance = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				fascism_drift = 0.10
+				political_power_gain = 0.15
+				production_factory_max_efficiency_factor = 0.15
+			}
+	
+			}
+
+			hold_gin_drinker_line = {
+
+			allowed = {
+				original_tag = HKG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_prepare_civil_war
+			
+			modifier = {
+				army_defence_factor = 0.1
+			}
+	
+			}
+
+			
+		
+}
+political_advisor = {
+		HKG_tony_keswick = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = HKG				
+			}
+			available = 
+			{
+			
+			}			
+			
+			traits = { compassionate_gentleman }
+		}			
+		HKG_john_keswick = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = HKG				
+			}
+			available = 
+			{
+			
+			}				
+			
+			traits = { war_industrialist }
+		}	
+		HKG_chow = {
+			
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = HKG
+			}
+			
+			traits = { popular_figurehead }
+		}		
+		HKG_tam = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+	        
+			}				
+			
+			traits = { ideological_crusader }
+		}		
+		HKG_law = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+	        
+			}				
+			
+			traits = { armaments_organizer }
+		}		
+		HKG_henry_pollock = {
+
+			picture = generic_political_advisor_south_america_3
+				
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{			
+        
+		}				
+			
+			traits = { silent_workhorse }
+		}
+		HKG_david_macdougall = {
+
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{			
+        
+		}				
+			
+			traits = { captain_of_industry }
+		}
+		HKG_franklin_gimson = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{			
+        
+		}				
+			
+			traits = { backroom_backstabber }
+
+		}						
+		HKG_huang_shaohong = {
+
+			picture = generic_political_advisor_arab_2
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = fascism        
+			}			
+			
+			traits = { quartermaster_general }
+		}
+		HKG_ng = {
+
+			picture = generic_communist_revolutionary_asian_2d			
+			
+			allowed = {
+				original_tag = HKG
+			}		
+			
+			traits = { communist_revolutionary }
+
+			on_add = {
+				country_event = political.1
+			}
+		
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}						
+		HKG_ma = {
+
+			picture = generic_political_advisor_asia_1			
+			
+			allowed = {
+				original_tag = HKG
+			}		
+			
+			traits = { democratic_reformer }
+
+			on_add = {
+				country_event = political.13
+			}
+		
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		HKG_chan = {
+
+			picture = generic_fascist_demagogue_asian_2d		
+			
+			allowed = {
+				original_tag = HKG
+			}			
+			
+			traits = { fascist_demagogue }
+
+			on_add = {
+				country_event = political.7
+			}
+		
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+}	
+	# MILITARY
+	army_chief = {
+		HK_arthur_grasett = {
+
+			picture = arthur_grasett
+		
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{			
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}         
+		}				
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		HKG_john_lawson = {
+
+		picture = generic_army_europe_3
+		
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{		
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}				
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}			
+		HKG_li_sun = {
+
+			picture = generic_army_asia_2		
+		
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{		
+        has_government = fascism        
+			}				
+
+			
+			traits = { army_chief_morale_2 }
+			
+		}			
+		HKG_huang_xu_chu = {
+
+			picture = generic_army_asia_1		
+		
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{		
+        has_government = fascism        
+			}				
+
+			
+			traits = { army_chief_reform_1 }
+			
+		}			
+		HKG_zhong_yi = {
+			
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{		
+        has_government = fascism        
+			}				
+			
+			traits = { army_chief_offensive_1 }
+
+		}		
+	}
+	air_chief = {
+		HKG_robert_brooke_popham = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}         
+		}
+			
+			traits = { air_chief_ground_support_2 }
+
+		}	
+		HKG_lin_wei_cheng = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = fascism           
+		}
+			
+			traits = { air_chief_safety_1 }
+
+		}			
+	}	
+	navy_chief = {
+		HKG_charles_little = {
+
+		picture = generic_navy_europe_2				
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}       
+		}				
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		HKG_geoffrey_layton = {
+
+		picture = generic_navy_europe_1				
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}				
+
+			
+			traits = { navy_chief_commerce_raiding_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		HKG_chen_wen_lin = {
+			
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = 
+			{
+        has_government = fascism       
+			}	
+			
+			traits = { navy_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}	
+
+	high_command = {
+		HKG_arthur_bartholomew = {
+
+		picture = generic_army_europe_1	
+		
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}			
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	
+		HKG_christopher_maltby = {
+
+		picture = generic_army_europe_2			
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}				
+
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HKG_lindsay_ride = {
+
+		picture = lindsay_ride
+		
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}			
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		HKG_frederic_dreyer = {
+
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = HKG
+			}
+
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}	
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		HKG_percy_noble = {
+
+		picture = generic_navy_europe_3				
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}				
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		HKG_chitang = {
+
+		picture = generic_army_asia_1			
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = fascism       
+			}				
+
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}			
+		HKG_bai = {
+
+		picture = generic_army_asia_2		
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{				
+        has_government = fascism       
+			}				
+
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}				
+		HKG_albert_wong = {
+
+		picture = generic_army_asia_3	
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{				
+        has_government = fascism       
+			}				
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		HKG_james_lam = {
+
+		picture = generic_army_asia_4	
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{				
+        has_government = fascism       
+			}				
+
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		HKG_bernard_cheung = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = HKG
+			}
+			
+
+			
+			traits = { navy_screen_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HKG_edward_tsui = {
+
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = HKG
+			}
+			
+
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HKG_choi = {
+
+			picture = generic_army_asia_3
+		
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = communism		
+			}				
+
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}			
+	}
+	theorist = {
+			HKG_arthur_grasett = {
+
+			picture = arthur_grasett
+			
+			allowed = {
+				original_tag = HKG			
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}	
+						
+			research_bonus = {
+				cat_grand_battle_plan = 0.07
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+		HKG_percy_noble_theo = {
+
+		picture = generic_navy_europe_3				
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}				
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		HKG_robert_brooke_popham_theo = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+      OR = {			
+			is_subject_of = ENG
+      has_government = democratic			 
+			}        
+		}
+			research_bonus = {
+				air_doctrine = 0.07
+			}		
+			
+			traits = { air_warfare_theorist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		HKG_liao_lei = {
+					
+			picture = generic_army_asia_3
+
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = fascism       
+			}				
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		HKG_lin_wei_cheng_theo = {
+					
+			picture = generic_air_asia_3
+				
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = fascism       
+			}				
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		HKG_chen_wen_lin_theo = {
+					
+					
+			allowed = {
+				original_tag = HKG
+			}
+			available = 
+			{
+        has_government = fascism       
+			}				
+			
+			picture = generic_navy_asia_2
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}		
+					
+	}
+		
+	}	

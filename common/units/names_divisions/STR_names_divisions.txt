@@ -1,0 +1,40 @@
+﻿STR_INF_01 = 
+{
+	name = "Colonial Garrison"
+
+	for_countries = { STR }				
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { STR_INF_01 }
+
+	fallback_name = "Colonial Garrison"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Colonial Garrison" }
+		2 = { "Colonial Garrison" }
+		3 = { "Colonial Garrison" }
+		4 = { "Colonial Garrison" }
+		5 = { "Colonial Garrison" }
+		6 = { "Colonial Garrison" }
+		7 = { "Colonial Garrison" }
+		8 = { "Colonial Garrison" }
+		9 = { "Colonial Garrison" }
+		10 = { "Colonial Garrison" }
+		11 = { "Colonial Garrison" }
+		12 = { "Colonial Garrison" }
+		13 = { "Colonial Garrison" }
+		14 = { "Colonial Garrison" }
+		15 = { "Colonial Garrison" }
+		16 = { "Colonial Garrison" }
+		17 = { "Colonial Garrison" }
+		18 = { "Colonial Garrison" }
+		19 = { "Colonial Garrison" }
+		20 = { "Colonial Garrison" }		
+	}
+}

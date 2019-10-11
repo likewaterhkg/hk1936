@@ -1,0 +1,24 @@
+state=
+{
+	id=326
+	name="STATE_326"
+	manpower = 98437
+	state_category = pastoral
+	history=
+	{
+		owner = HKG
+		add_core_of = HKG
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+			13219 = {
+				naval_base = 4
+				coastal_bunker = 1
+			}
+		}
+	}
+	provinces={
+		10062 13219
+	}
+}

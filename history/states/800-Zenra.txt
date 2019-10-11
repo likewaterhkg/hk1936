@@ -1,0 +1,14 @@
+state={
+	id=800
+	name="STATE_800"
+	history={
+		owner = KOR
+		add_core_of = KOR
+	}
+	provinces={
+		1177 4126 10110 11948 12085 
+	}
+	manpower=4150000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

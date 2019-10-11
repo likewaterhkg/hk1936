@@ -1,0 +1,27 @@
+
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = ENG
+		add_core_of = MLA
+		victory_points = {
+			7329 1 
+		}
+		buildings = {
+		infrastructure = 3
+		7329 = {
+				naval_base = 1
+
+			}
+	}
+	}
+
+	provinces={
+		7329 13230 
+	}
+	manpower=230000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

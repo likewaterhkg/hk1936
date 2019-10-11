@@ -1,0 +1,65 @@
+﻿
+HKG_INF_01 = 
+{
+	name = "Hong Kong VDF"
+
+	for_countries = { HKG }				
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HKG_INF_01 }
+
+	fallback_name = "Hong Kong VDF"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Hong Kong VDF" }
+		2 = { "Hong Kong VDF" }
+		3 = { "Hong Kong VDF" }
+		4 = { "Hong Kong VDF" }
+		5 = { "Hong Kong VDF" }
+		6 = { "Hong Kong VDF" }
+		7 = { "Hong Kong VDF" }
+		8 = { "Hong Kong VDF" }
+		9 = { "Hong Kong VDF" }
+		10 = { "Hong Kong VDF" }
+		11 = { "Hong Kong VDF" }
+		12 = { "Hong Kong VDF" }
+		13 = { "Hong Kong VDF" }
+		14 = { "Hong Kong VDF" }
+		15 = { "Hong Kong VDF" }
+		16 = { "Hong Kong VDF" }
+		17 = { "Hong Kong VDF" }
+		18 = { "Hong Kong VDF" }
+		19 = { "Hong Kong VDF" }
+		20 = { "Hong Kong VDF" }		
+	}
+}
+
+HKG_INF_02 = 
+{
+	name = "Canada HK Volunteer Defense Force"
+
+	for_countries = { HKG }				
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HKG_INF_02 }
+
+	fallback_name = "Canada HK Volunteer Defense Force"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Canada HK Volunteer Defense Force" }
+		2 = { "Canada HK Volunteer Defense Force" }	
+	}
+}
+

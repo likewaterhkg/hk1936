@@ -1,0 +1,23 @@
+state={
+	id=816
+	name="STATE_816"
+	history=
+	{
+		owner = IND
+		add_core_of = CAM
+		add_core_of = IND
+		buildings = {
+			infrastructure = 1
+			7432 = {
+				naval_base = 1
+
+			}
+            }
+            }
+	provinces={
+		4330 4359 4639 7319 7376 7404 7432 10289 10317 12191 12260 12288 
+	}
+	manpower=1980000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,33 @@
+state={
+	id=788
+	name="STATE_788"
+	manpower = 381064
+	state_category = town
+	history=
+	{
+		owner = HKG
+		add_core_of = HKG
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+		13222 25
+		}
+		victory_points = {
+		13223 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 1
+
+			13222 = {
+				naval_base = 6
+				coastal_bunker = 1
+				}
+				}
+				}
+	provinces={
+		13222 13223 
+	}
+}

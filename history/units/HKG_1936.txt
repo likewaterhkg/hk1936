@@ -1,0 +1,36 @@
+﻿division_template = {
+	name = "Hong Kong VDF"
+
+	division_names_group = HKG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	#Hong Kong Force
+	division= {	# "1st Royal Hong Kong Force"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13221
+		division_template = "Hong Kong VDF"
+		start_experience_factor = 0.3
+	}
+	division= {	# "2nd Royal Hong Kong Force"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13221
+		division_template = "Hong Kong VDF"
+		start_experience_factor = 0.3
+		}
+		}

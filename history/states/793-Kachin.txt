@@ -1,0 +1,15 @@
+state={
+	id=793
+	name="STATE_793"
+	history={
+		add_core_of = BRM
+		owner = RAJ
+
+	}
+	provinces={
+		1082 1197 1934 4318 4425 4996 8063 10920 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=rural	
+}

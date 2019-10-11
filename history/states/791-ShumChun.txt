@@ -1,0 +1,18 @@
+state={
+	id=791
+	name="STATE_791"
+	manpower = 300000
+	state_category = town
+	history={
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+            7108 10
+            }
+            }
+	provinces={
+		7108 
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=819
+	name="STATE_819"
+	history=
+	{
+		owner = SIA
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+            }
+            }
+	provinces={
+		1244 4433 7225 7292 10293 12195 12224 12264 
+	}
+	manpower=1300000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

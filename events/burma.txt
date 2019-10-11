@@ -1,0 +1,159 @@
+﻿add_namespace = burma
+
+country_event = {
+	id = burma.1
+	title = burma.1.t # Government of burma Act 1935
+	desc = burma.1.d
+	picture = gfx/event_pictures/burma_government_house.dds
+	
+	hidden = yes
+
+	trigger = {
+		date > 1937.4.1
+		Tag = ENG
+		country_exists = RAJ
+		}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	fire_only_once = yes
+	immediate = {
+	set_global_flag = burma_act
+	}
+	
+	option = { 
+		name = burma.1.a
+		custom_effect_tooltip = burma_spawn_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					288 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 288 }
+				RAJ = { remove_state_core = 288 }
+			}
+			if = {
+				limit = {
+					640 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 640 }
+				RAJ = { remove_state_core = 640 }
+			}
+			if = {
+				limit = {
+					793 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 793 }
+				RAJ = { remove_state_core = 793 }
+			}
+			if = {
+				limit = {
+					792 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 792 }
+				RAJ = { remove_state_core = 792 }
+			}
+			if = {
+				limit = {
+					794 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 794 }
+				RAJ = { remove_state_core = 794 }
+			}
+			if = {
+				limit = {
+					795 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 795 }
+				RAJ = { remove_state_core = 795 }
+			}
+
+			release_puppet = BRM
+
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+					}
+				set_autonomy = {
+					target = BRM
+					autonomous_state = autonomy_colony
+					freedom_level = 0.35
+					}
+				else = {
+					puppet = BRM
+				}
+			}
+			
+			BRM = { load_oob = BRM_1937 }
+			BRM = {	
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 50
+					producer = "RAJ"
+				}
+			}
+			BRM = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 300
+					producer = "RAJ"
+				}
+			}
+			BRM = { 
+				set_politics = { 
+					ruling_party = neutrality
+					last_election = "1936.11.26"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				create_country_leader = {
+				name = "Ba Maw"
+				desc = "POLITICS_BAMAW_DESC"
+				picture = "gfx//leaders//BRM//bamaw.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+		
+				}
+				}
+				set_political_party = {
+					ideology = democratic popularity = 51
+					ideology = fascism popularity = 1
+					ideology = communism popularity = 1
+					ideology = neutrality popularity = 47
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+﻿l_english:
+ KOR_communism_party:0 "WPK"
+ KOR_communism_party_long:0 "Worker's Party of Korea"
+ KOR_democratic_party:0 "Liberal Party"
+ KOR_neutrality_party:0 "Yi Dynasty"
+ KOR_fascism_party:0 "Chōsen Sōtoku-fu"
+
+ MAL_fascism_party:0 "Panoceanic Unionists"
+ MAL_democratic_party:0 "United Malays National Organisation" #or UMNO or PEKEMBAR
+ MAL_communism_party:0 "Malayan Communist Party" #or MCP
+ MAL_neutrality_party:0 "Kesatuan Melayu Muda" #or KMM 
+ LAO_fascism_party:0 "Tribal Centralization Party"
+ LAO_democratic_party:0 "Democratic Party"
+ LAO_communism_party:0 "Pathet Lao"
+ LAO_neutrality_party:0 "Royalists"
+
+ HKG_communism_party_long:0 "Communist Party of China"
+ HKG_communism_party:0 "CCP"
+ HKG_democratic_party:0 "HKRC"
+ HKG_democratic_party_long:0 "Reform Club of Hong Kong"
+ HKG_fascism_party:0 "CC"
+ HKG_fascism_party_long:0 "Canton Committee"
+ HKG_neutrality_party:0 "Colonial Government"
+ 
+ YUE_communism_party:0 "NTCG"
+ YUE_communism_party_long:0 "New Territories Concern Group"
+ 
+ IND_communism_party:0 "Parti Communiste Indochinois"
+ IND_democratic_party:0 "Gouvernement colonial de l'Indochine"
+ IND_fascism_party:0 "Société de réforme"
+ IND_neutrality:0 "Indochine Quoc Dan Dang"
+

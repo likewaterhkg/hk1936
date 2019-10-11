@@ -1,0 +1,23 @@
+state={
+	id=821
+	name="STATE_821"
+	history=
+	{
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 2
+			12113 = {
+				naval_base = 2
+
+			}
+
+		}
+            }
+	provinces={
+		12113 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

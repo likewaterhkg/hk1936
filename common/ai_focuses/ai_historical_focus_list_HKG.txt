@@ -1,0 +1,30 @@
+ai_historical_focus_list_HKG = {
+    ai_national_focuses = {
+    Finish_the_Shing_Mun_Reservoir_Project
+    Canton_Railroad_extension
+    War_preperation
+    HK_Defence_Scheme_1936
+    Comprehensive_Defense_Strategy
+    Gin_Drinkers_Line
+    New_Naval_Plan
+    Kowloon_industrial_zone
+	Aberdeen_Dockyard #1937.3
+	Taikoo_Dockyard
+	Whampoa_Dockyard
+	Support_Chiang  # 1937.8
+	Declare_HK_as_a_free_trade_zone
+	JAP_won_t_attack_HK
+    Strengthen_the_Fareast_Outpost
+    Secret_Plan_Hong_Kong_Island_First
+    Northcote_College_of_Education 
+    Runway_13_31 # 1938.10
+    Empire_Ships
+    Our_Own_Minesweeper
+    Continue_the_construction_of_Shek_Kong_Airfield
+    Anti_Air_in_Victoria
+    HK_Fighter_Squad
+    Anti_Air_in_Kowloon
+    Canadian_Force
+    Defense
+    }
+}

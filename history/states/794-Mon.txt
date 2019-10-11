@@ -1,0 +1,15 @@
+state={
+	id=794
+	name="STATE_794"
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		}
+	provinces={
+		1296 1315 1385 1403 4275 4336 7295 10217 12125 12292 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
+

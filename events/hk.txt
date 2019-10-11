@@ -1,0 +1,247 @@
+﻿# New Governer Northcote
+add_namespace = HKG
+
+#########Mark Young#######
+country_event = {
+	id = HKG.1
+	title = HKG.1.t
+	desc = HKG.1.d
+	picture = GFX_report_event_new_governor1
+	
+	trigger = {
+		tag = HKG
+		has_government = neutrality
+		date > 1941.7.1
+		date < 1941.8.1
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = HKG.1.a
+		set_country_flag = governor_mark_young		
+		create_country_leader = {
+	name = "Mark Young"
+	desc = "POLITICS_MARK_DESC"
+	picture = "gfx//leaders//HKG//Mark_Young.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+			traits = {
+				
+			}
+		}		
+	}
+
+}
+
+country_event = {
+	id = HKG.2
+	title = HKG.2.t
+	desc = HKG.2.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	trigger = {
+		has_completed_focus = Support_Chiang 
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+		}
+
+	option = {
+	name = HKG.2.a
+	790 = {add_manpower = 300000}
+	790 = {
+    					 add_extra_state_shared_building_slots = 2 }
+	790 = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+					
+								}
+		
+	}
+	
+}
+}
+######Northcote#######
+country_event = {
+	id = HKG.3
+	title = HKG.3.t
+	desc = HKG.3.d
+	picture = GFX_report_event_new_governor1
+	
+	trigger = {
+		tag = HKG
+		has_government = neutrality
+		date > 1937.4.1
+		date < 1937.4.30
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = HKG.3.a
+		set_country_flag = governor_geoffry_northcote		
+		create_country_leader = {
+	name = "Geoffry Northcote"
+	desc = "POLITICS_GEOFFRY_NORTHCOTE_DESC"
+	picture = "gfx//leaders//HKG//Geoffry_Northcote.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+			traits = {
+				
+			}
+		}		
+	}
+
+}
+
+######Gander#######
+country_event = {
+	id = HKG.4
+	title = HKG.4.t
+	desc = HKG.4.d
+	picture = GFX_report_event_new_governor1
+	
+	trigger = {
+		has_completed_focus = Canadian_Force
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = HKG.4.a
+			
+		create_corps_commander = {
+	name = "Gander"
+	portrait_path = "gfx/leaders/HKG/Gander.dds"
+	traits = { War_Hero }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+				
+			}
+		}	
+
+######Chongking_Conference#######
+country_event = {
+	id = HKG.5
+	title = HKG.5.t
+	desc = HKG.5.d
+	picture = GFX_report_event_new_governor1
+	
+	trigger = {
+		has_completed_focus = Chongking_Conference
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }	
+
+	option = {
+		name = HKG.5.a
+			
+		CHI = { remove_state_core = 326 } 
+		CHI = { remove_state_core = 788 } 
+		CHI = { remove_state_core = 789 } 
+		CHI = { remove_state_core = 790 }
+				
+			}
+		}
+
+#######Maltby Arrived###########
+country_event = {
+	id = HKG.6
+	title = HKG.6.t
+	desc = HKG.6.d
+	picture = GFX_report_event_new_governor1
+	
+	trigger = {
+		tag = HKG
+		has_government = neutrality
+		date > 1941.6.20
+		date < 1941.7.20
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = HKG.6.a
+	remove_unit_leader = 902 #Grasett
+	create_corps_commander = {
+	name = "Christopher Maltby"
+	portrait_path = "gfx/leaders/HKG/Maltby.dds"
+	traits = { Infantry_Officer Inflexible_Strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+	id = 903
+							}
+				
+			}
+		}
+
+#######Yuen Long Attack###########
+country_event = {
+	id = HKG.7
+	title = HKG.7.t
+	desc = HKG.7.d
+	picture = GFX_report_event_Yuen_Long_Attack
+	
+	trigger = {
+		tag = HKG
+		has_government = neutrality
+		date > 1936.7.21
+		date < 1936.7.23
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = HKG.7.a
+		hidden_effect = {
+		YUE = {add_state_core = 823}
+		SOV = {transfer_state = 823}
+		SOV = {release = YUE}
+		YUE = {load_oob = "YUE_1936"}
+		YUE = {declare_war_on = {
+    	target = HKG
+    	type = annex_everything
+    	}
+}
+	
+}
+}
+
+option = {
+		name = HKG.7.b
+		hidden_effect = {
+		add_political_power = 5
+	
+}
+}
+
+}		
+	
