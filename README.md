@@ -1,6 +1,6 @@
 # hk1936
 
-香港mod Alpha 0.1
+香港mod Alpha 0.1.1
 
 請先打開hoi4, 用modding tools 創建一個新mod, 然後把所有檔案(hk1936)解壓到新mod的資料夾,即可試玩
 
