@@ -1,0 +1,22 @@
+state={
+	id=824
+	name="STATE_824"
+	provinces={
+		13233 13234 
+	}
+		history=
+	{
+		owner = POR
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			13233 = {
+				naval_base = 2
+			}
+		}
+            }
+	manpower=78000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

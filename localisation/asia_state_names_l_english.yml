@@ -1,9 +1,9 @@
 ﻿l_english:
- STATE_286:0 "Cocochina"
+ STATE_286:1 "Cocochina"
  STATE_288:0 "Burma"
  STATE_289:0 "Isan"
  STATE_326:0 "Lantau"
- STATE_333:0 "Sarawak"
+ STATE_333:1 "Sarawak"
  STATE_336:0 "Singapore"
  STATE_525:0 "Chusei"
  STATE_527:0 "Heian"
@@ -47,3 +47,4 @@
  STATE_821:0 "Riau Islands"
  STATE_822:0 "Dinding"
  STATE_823:0 "Yuen Long"
+ STATE_824:0 "Ilhas"
